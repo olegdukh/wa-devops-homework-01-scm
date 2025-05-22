@@ -10,3 +10,4 @@ fi
 echo "Starting NGINX..."
 docker run -d --name nginx-server -p 80:80 nginx
 
+docker logs nginx-server > nginx.log
